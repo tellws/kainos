@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url("../../css/common.css");
+
+main{padding-top:0}
+
+/*WORKS IMG:START*/
+#works{}
+#works .works-img{max-width:100%;width:100%;margin:0 auto}
+#works .works-img figure{position:relative;width:100%;height:800px;margin:0;overflow:hidden}
+#works .works-img figure:after{content:'';position:absolute;width:100%;height:100%;background-color:rgba(0,0,0,.2);}
+#works .works-img figure img{position:absolute;top:50%;width:100%;height:auto;transform:translateY(-50%) scale(1.1)}
+/*WORKS IMG:END*/
+
+
+/*WORKS CONT:START*/
+#works .works-cont{margin:80px 0;color:#fff}
+#works .works-cont .cont-wrap{padding:0 200px}
+#works .works-cont .cont-txt{}
+#works .works-cont .cont-txt dt{}
+#works .works-cont .cont-txt dt h2{max-width:520px;margin-top:40px;font-size:75px;font-weight:600}
+#works .works-cont .cont-txt dd{max-width:720px;margin-top:40px;font-size:16px;font-weight:400;line-height:2;text-transform:initial}
+#works .works-cont .cont-txt dd span{display:block;margin-bottom:10px;font-size:20px;font-weight:400}
+#works .works-cont .cont-txt dd strong{display:block;margin-top:10px;font-weight:normal;font-size:14px;font-style:italic;line-height:1.5;color:#999}
+#works .works-cont .cont-info{margin-top:40px}
+#works .works-cont .cont-info li{font-size:16px;line-height:2}
+#works .works-cont .cont-info li dl{font-size:0}
+#works .works-cont .cont-info li dl dt{display:inline-block;width:150px;font-size:16px;color:#999;vertical-align:top}
+#works .works-cont .cont-info li dl dd{display:inline-block;font-size:16px;}
+/*#works .works-cont .cont-info li span{display:inline-block;width:150px;color:#999}*/
+#works .works-cont .cont-info li a{text-decoration:underline;color:#fff}
+#works .works-cont .cont-file{width:100%;margin-top:40px;text-align:left;font-size:16px}
+#works .works-cont .cont-file thead{background-color:rgba(255,255,255,.1)}
+#works .works-cont .cont-file thead tr{}
+#works .works-cont .cont-file thead tr th{padding:20px 15px;color:#999}
+#works .works-cont .cont-file tbody{}
+#works .works-cont .cont-file tbody tr{border-bottom:1px solid rgba(255,255,255,.1)}
+#works .works-cont .cont-file tbody tr.bor-btm{border-bottom:2px solid rgba(255,255,255,.2)}
+#works .works-cont .cont-file tbody tr td{padding:20px 15px;text-transform:uppercase}
+#works .works-cont .cont-file tbody tr td:nth-child(2){text-transform:initial}
+#works .works-cont .cont-file tbody tr td span{display:inline-block;padding:5px 10px;background-color:#b4bed1;border-radius:3px}
+#works .works-cont .cont-file tbody tr td.css span{background-color:#c0d1b4}
+#works .works-cont .cont-file tbody tr td.js span{background-color:#d1b9b4}
+#works .works-cont .cont-file tbody tr td a{display:inline-block;text-decoration:underline;text-transform:lowercase;color:#fff}
+/*WORKS CONT:END*/
+
+/*BACK:START*/
+#back-btn-area{text-align:center}
+#back-btn-area .back-btn:after{content:'';position:absolute;top:50%;right:20px;width:20px;height:20px;transform:translateY(-50%);background:url(../images/iconmonstr-menu-2-240.png) no-repeat 0 0;background-size:100%}
+#back-btn-area .back-btn span{position:relative;width:80px}
+/*BACK:END*/
+
+/*main #next-page .next-page-inner.megabox{background-image:url(../../images/works-megabox-wide-3.jpg);background-position:center;background-repeat:no-repeat;background-size:cover}*/
+
+
+@media screen and (max-width:1480px){
+	#works .works-img figure{height:700px}
+	#works .works-cont .cont-wrap{padding:0}
+	#works .works-cont .cont-txt dt h2{font-size:65px}
+}
+
+@media screen and (max-width:1080px){
+	#works .works-cont{margin:60px auto}
+	#works .works-img figure{height:600px}
+	#works .works-cont .cont-txt dt h2{font-size:55px}
+	/*.back-btn{margin-bottom:40px}*/
+}
+
+@media screen and (max-width:880px){
+	#works .works-img figure{height:60vw}
+	#works .works-cont{margin:40px auto}
+	#works .works-cont .cont-txt dt h2{font-size:40px}
+	#works .works-cont .cont-txt dd span{font-size:18px}
+	#works .works-cont .cont-txt dd,
+	#works .works-cont .cont-info li,
+	#works .works-cont .cont-file{font-size:14px}
+
+	#works .works-cont .cont-info li dl dt,
+	#works .works-cont .cont-info li dl dd{font-size:14px}
+	#works .works-cont .cont-info li dl dd{width:calc(100% - 150px)}
+	/*.back-btn{margin-bottom:30px}*/
+}
+
+@media screen and (max-width:480px){
+	
+}

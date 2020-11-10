@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="metaViewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        if (navigator.userAgent.toLowerCase().indexOf('android') > -1)
+            document.getElementById('metaViewport').setAttribute('content', 'width=' + screen.width + ', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    </script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Lawrence | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- [if it IE 9]
+    <script src="js/html5shiv.js></script>"
+    -->
+</head>
+
+<body>
+    <div class="wrap load">
+        <header>
+            <div class="header-inner">
+                <div class="container">
+                    <h1>
+                        <a href="index.html">kainos</a>
+                    </h1>
+                    <nav>
+                        <ul id="main-navigation" class="gnb">
+                            <li class="active"><a href="index.html">works</a></li>
+                            <li><a href="about/index.html">about</a></li>
+                            <li><a href="contact/index.html">contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-btn">
+                        <button type="button"></button>
+                    </div>
+                    <div class="nav-btn">
+                        <button type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="side-nav">
+                        <div class="container">
+                            <!-- <button type="button" class="close-btn">close<span></span><span></span></button> -->
+                            <ul class="side-nav-list">
+                                <li class="active"><a onclick="" href="index.html">works</a></li>
+                                <li><a onclick="return createTimedLink(this, linkTime, 500);"
+                                        href="about/index.html">about</a></li>
+                                <li><a onclick="return createTimedLink(this, linkTime, 500);"
+                                        href="contact/index.html">contact</a></li>
+                            </ul>
+                            <div class="info-wrap">
+                                <dl>
+                                    <dt>방재원</dt>
+                                    <dd>web publisher, UI/UX designer & frontend developer<span>South korea</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="title" class="view">
+                <div class="title-inner">
+                    <div class="container">
+                        <div class="tit-wrap">
+                            <!-- <div class="page-name appear appear-1">works</div> -->
+                            <h2 class="appear appear-1">works</h2>
+                            <p class="appear appear-2">HTML, CSS, JAVASCRIPT, JQUERY를 이용하여 웹 페이지를 제작합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="slider">
+                <div class="slider-inner">
+                    <div class="swiper-container swiper-container-fade swiper-container-horizontal">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                            <!-- <p class="">project<br>list</p> -->
+                            <div class="swiper-slide slide01"
+                                style="width: 491px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="img"></div>
+                                <div class="slide-tit">
+                                    <div class="container">
+                                        <div class="slide-tit-wrap">
+                                            <span class="type">adaptive</span>
+                                            <h3>lineage promotion page</h3>
+                                            <p>리니지 적응형 프로모션 페이지</p>
+                                            <span class="date">2020. 03</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-timer"></div>
+                            </div>
+                            <div class="swiper-slide slide02 swiper-slide-prev"
+                                style="width: 491px; opacity: 1; transform: translate3d(-491px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="img"></div>
+                                <div class="slide-tit">
+                                    <div class="container">
+                                        <div class="slide-tit-wrap">
+                                            <span class="type">responsive</span>
+                                            <h3>samsung main page</h3>
+                                            <p>삼성전자 반응형 메인 페이지</p>
+                                            <span class="date">2020. 02</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-timer"></div>
+                            </div>
+                            <div class="swiper-slide slide03 swiper-slide-active"
+                                style="width: 491px; opacity: 1; transform: translate3d(-982px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="img"></div>
+                                <div class="slide-tit">
+                                    <div class="container">
+                                        <div class="slide-tit-wrap">
+                                            <span class="type">mobile</span>
+                                            <h3>megabox mobile page</h3>
+                                            <p>메가박스 모바일 전용 메인 페이지</p>
+                                            <span class="date">2019. 08</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-timer"></div>
+                            </div>
+                            <div class="swiper-slide slide04 swiper-slide-next"
+                                style="width: 491px; opacity: 0; transform: translate3d(-1473px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="img"></div>
+                                <div class="slide-tit">
+                                    <div class="container">
+                                        <div class="slide-tit-wrap">
+                                            <span class="type">responsive</span>
+                                            <h3>kosa main page</h3>
+                                            <p>한국소프트웨어산업협회 반응형 메인 페이지</p>
+                                            <span class="date">2018. 05</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-timer"></div>
+                            </div>
+                            <div class="swiper-slide slide05"
+                                style="width: 491px; opacity: 0; transform: translate3d(-1964px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="img"></div>
+                                <div class="slide-tit">
+                                    <div class="container">
+                                        <div class="slide-tit-wrap">
+                                            <span class="type">responsive</span>
+                                            <h3>hanabank main, sub page</h3>
+                                            <p>하나은행 반응형 메인, 서브 페이지</p>
+                                            <span class="date">2018. 04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-timer"></div>
+                            </div>
+                            <div class="swiper-slide slide06"
+                                style="width: 491px; opacity: 0; transform: translate3d(-2455px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="img"></div>
+                                <div class="slide-tit">
+                                    <div class="container">
+                                        <div class="slide-tit-wrap">
+                                            <span class="type">responsive</span>
+                                            <h3>kcc main, join page</h3>
+                                            <p>금강컨트리클럽 반응형 메인, 회원가입 페이지</p>
+                                            <span class="date">2017. 08</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-timer"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-bullets"><span
+                                class="swiper-pagination-bullet"></span><span
+                                class="swiper-pagination-bullet"></span><span
+                                class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                                class="swiper-pagination-bullet"></span><span
+                                class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </section>
+            <section id="works-list">
+                <div class="works-list-inner">
+                    <div class="container">
+                        <article class="grid">
+                            <a href="works/works-lineage.html">
+                                <img src="images/works-lineage-wide-2.jpg" alt="">
+                            </a>
+                            <div class="works-list-info">
+                                <h3>lineage promotion page</h3>
+                                <p>리니지 적응형 프로모션 페이지</p>
+                                <div class="info-btm">
+                                    <span class="type">adaptive</span>
+                                    <p class="date">2020. 03</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="grid">
+                            <a href="works/works-samsung.html">
+                                <img src="images/works-samsung-wide.jpg" alt="">
+                            </a>
+                            <div class="works-list-info">
+                                <h3>samsung main page</h3>
+                                <p>삼성전자 반응형 메인 페이지</p>
+                                <div class="info-btm">
+                                    <span class="type">responsive</span>
+                                    <p class="date">2020. 02</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="grid">
+                            <a href="works/works-megabox.html">
+                                <img src="images/works-megabox-wide-3.jpg" alt="">
+                            </a>
+                            <div class="works-list-info">
+                                <h3>megabox main page</h3>
+                                <p>메가박스 모바일 전용 메인 페이지</p>
+                                <div class="info-btm">
+                                    <span class="type">moblie</span>
+                                    <p class="date">2019. 08</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="grid">
+                            <a href="works/works-kosa.html">
+                                <img src="images/works-kosa-wide-3.jpg" alt="">
+                            </a>
+                            <div class="works-list-info">
+                                <h3>kosa main page</h3>
+                                <p>한국소프트웨어산업협외 반응형 메인 페이지</p>
+                                <div class="info-btm">
+                                    <span class="type">responsive</span>
+                                    <p class="date">2019. 05</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="grid">
+                            <a href="works/works-hanabank.html">
+                                <img src="images/works-hanabank-wide-2.jpg" alt="">
+                            </a>
+                            <div class="works-list-info">
+                                <h3>hanabank main, sub page</h3>
+                                <p>하나은행 반응형 메인, 서브 페이지</p>
+                                <div class="info-btm">
+                                    <span class="type">responsive</span>
+                                    <p class="date">2018. 04</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="grid">
+                            <a href="works/works-kcc.html">
+                                <img src="images/works-kcc-wide-3.jpg" alt="">
+                            </a>
+                            <div class="works-list-info">
+                                <h3>kcc main, join page</h3>
+                                <p>금강컨트리클럽 반응형 메인, 회원가입 페이지</p>
+                                <div class="info-btm">
+                                    <span class="type">responsive</span>
+                                    <p class="date">2017. 08</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="next-page">
+                <div class="next-page-inner">
+                    <div class="container">
+                        <h4>next<div class="next-page-name">about</div>
+                        </h4>
+                        <a href="about/index.html" class="next-page-tit">about lawrence</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-inner">
+                <div class="container">
+                    <div class="fot-top">
+                        <a href="#" class="fot-logo">kainos</a>
+                        <ul class="sns-list">
+                            <li><a href="#">instagram</a></li>
+                            <li><a href="#">blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="fot-btm">
+                        <ul class="fot-nav">
+                            <li><a href="index.html">works</a></li>
+                            <li><a href="about/index.html">about</a></li>
+                            <li><a href="contact/index.html">contact</a></li>
+                        </ul>
+                        <p class="copyright">© 2020 kainos. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="scroll-down-btn">
+            <button type="button"><span>scroll</span></button>
+        </div>
+        <div class="scroll-up-btn">
+            <button type="button"><span>scroll</span></button>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

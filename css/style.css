@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import url("common.css");
+
+
+/*SLIDER:START*/
+main #slider{position:relative;/*max-width:1560px;*/width:100%;margin:0 auto;transform:translateY(50px);opacity:0;transition:transform .7s ease-out, opacity .7s ease-out}
+main #slider .slider-inner{padding-top:80px}
+.wrap.load main #slider{transform:translateY(0);opacity:1;transition:transform .7s ease-out, opacity .7s ease-out;transition-delay:.3s}
+main #slider .swiper-container{cursor:grab}
+main #slider .swiper-container .swiper-wrapper{}
+main #slider .swiper-container .swiper-wrapper .swiper-slide{position:relative;width:100%;height:800px;overflow:hidden}
+main #slider .swiper-container .swiper-wrapper .swiper-slide:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.4);z-index:1}
+main #slider .swiper-container .swiper-wrapper .swiper-slide .img{position:relative;width:auto;height:100%;background-repeat:no-repeat;background-size:cover;background-position:center;transform:scale(1.3);transition:transform 2s}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.slide01 .img{background-image:url(../images/works-lineage-wide-2.jpg)}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.slide02 .img{background-image:url(../images/works-samsung-wide.jpg)}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.slide03 .img{background-image:url(../images/works-megabox-wide-3.jpg)}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.slide04 .img{background-image:url(../images/works-kosa-wide-3.jpg)}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.slide05 .img{background-image:url(../images/works-hanabank-wide-2.jpg)}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.slide06 .img{background-image:url(../images/works-kcc-wide-3.jpg)}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .img{transform:scale(1);transition:transform 2s}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev .img,
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next .img{transform:scale(1.3);transition:transform 2s}
+main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit{position:absolute;bottom:100px;width:100%;z-index:2}
+main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap{position:relative;margin-left:260px}
+main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap .type{position:relative;top:35px;display:inline-block;padding:3px 5px;font-size:13px;border-radius:3px;background-color:#fff;color:#999;transition:top .8s, opacity .8s ease-out;opacity:0}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-tit .slide-tit-wrap .type{top:0;transition:top .8s, opacity .8s ease-out;opacity:1}
+main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap h3{position:relative;top:35px;margin-top:5px;font-size:50px;font-weight:700;line-height:1.2;color:#fff;transition:top .8s, opacity .8s ease-out;transition-delay: .1s;opacity:0}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-tit .slide-tit-wrap h3{top:0;transition:top .8s, opacity .8s ease-out;transition-delay:.1s;opacity:1}
+main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap p{position:relative;top:15px;margin-top:5px;font-size:20px;font-weight:700;color:#fff;transform:translateY(100%);transition:top .8s ease-out, opacity .8s ease-out;transition-delay:.2s;opacity:0}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-tit .slide-tit-wrap p{top:-20px;transition:top .8s, opacity .8s ease-out;transition-delay:.2s;opacity:1}
+main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap .date{position:relative;top:25px;display:block;margin-top:10px;font-size:14px;color:#fff;transform:translateY(100%);transition:top .8s ease-out, opacity .8s ease-out;transition-delay:.3s;opacity:0}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-tit .slide-tit-wrap .date{top:-10px;transition:top .8s, opacity .8s ease-out;transition-delay:.3s;opacity:1}
+
+main #slider .swiper-container .swiper-pagination-bullet{width:2px;height:6px;background-color:rgba(255,255,255,.6);border-radius:0;opacity:1}
+main #slider .swiper-container .swiper-pagination-bullet:first-child{margin-left:0}
+main #slider .swiper-container .swiper-pagination-bullet-active{height:12px;background-color:#fff;transition:height .2s ease-out}
+main #slider .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{left:50%;max-width:1440px;width:100%;margin-bottom:30px;padding:0 80px;transform:translateX(-50%);transition:height .2s ease-out;text-align:left;box-sizing:border-box}
+
+main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-timer{position:absolute;bottom:0;left:0;width:0;height:4px;background:#ea4335;z-index:1}
+main #slider .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .slide-timer{animation:timer 5.3s ease-out;animation-direction:5.3s}
+/*SLIDER:END*/
+
+
+/*WORKS LIST:START*/
+main #works-list{font-size:0}
+main #works-list .works-list-inner{padding:80px 0 20px}
+main #works-list .container{padding:0 65px}
+main #works-list .grid{position:relative;display:inline-block;width:610px;transform:translateY(50px);opacity:0;transition:transform .7s ease-out, opacity .9s ease-out}
+main #works-list .grid.view{transform:translateY(0);opacity:1;transition:transform .7s ease-out, opacity .9s ease-out}
+main #works-list .grid:nth-child(odd){margin:0 30px 60px 15px}
+main #works-list .grid:nth-child(even){margin:0 15px 60px 30px}
+main #works-list .grid a{position:relative;display:block;width:100%;height:100%}
+main #works-list .grid a:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:#323232;opacity:.2}
+main #works-list .grid a img{width:100%}
+main #works-list .grid .works-list-info{margin-top:15px}
+main #works-list .grid .works-list-info h3{margin-bottom:5px;font-size:20px;font-weight:700;color:#fff}
+main #works-list .grid .works-list-info p{margin-bottom:5px;font-size:16px;color:#fff}
+/*main #works-list .grid .works-list-tit:hover .type,*/
+/*main #works-list .grid .works-list-tit:hover h3{transform:translateY(0);transition:transform .2s ease-out}*/
+main #works-list .grid .works-list-info .info-btm{}
+main #works-list .grid .works-list-info .info-btm .type{display:inline-block;margin-right:10px;font-size:16px;color:#999}
+main #works-list .grid .works-list-info .info-btm .date{display:inline-block;font-size:16px;color:#999}
+/*main #works-list .grid .works-list-tit:hover .date{transform:translateY(0);transition:transform .2s ease-out, opacity .2s ease-out;color:#fff;opacity:1}*/
+/*WORKS LIST:END*/
+
+
+@media screen and (max-width:1480px){
+	main #slider .slider-inner{padding-top:60px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide{height:700px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap{margin-left:200px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap h3{margin-top:3px;font-size:45px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap p{margin-top:7px;font-size:17px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap .date{margin-top:5px}
+	main #slider .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{max-width:1040px}
+	
+	main #works-list .works-list-inner{padding-top:60px}
+	main #works-list .grid{width:420px}
+	main #works-list .grid:nth-child(odd){margin:0 20px 40px 15px}
+	main #works-list .grid:nth-child(even){margin:0 15px 40px 20px}
+}
+
+@media screen and (max-width:1080px){
+	main #slider .swiper-container .swiper-wrapper .swiper-slide{height:600px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap{margin-left:0}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap h3{font-size:40px}
+	main #slider .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{max-width:740px}
+	
+	main #works-list .container{padding:0 80px}
+	main #works-list .grid{width:100%}
+	main #works-list .grid:nth-child(odd),
+	main #works-list .grid:nth-child(even){margin:0 0 40px}
+}
+
+@media screen and (max-width:880px){
+	main #slider .slider-inner{padding-top:40px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide{min-height:350px;height:60vw}
+	main #slider .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{margin-left:30px;padding:0}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap h3{font-size:30px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap p{margin-top:10px;font-size:15px;font-weight:600}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap .date{margin-top:0}
+	
+	main #works-list .works-list-inner{padding:40px 0 10px}
+	main #works-list .container{padding:0 30px}
+
+	main #works-list .grid:nth-child(odd),
+	main #works-list .grid:nth-child(even){margin:0 0 30px}
+}
+
+@media screen and (max-width:480px){
+	main #works-list .grid a .type,
+	main #works-list .grid a h3,
+	main #works-list .grid a .date{position:relative;top:auto;left:auto;bottom:auto;transform:translateY(0);opacity:1}
+	main #works-list .grid a .type{display:inline-block;margin-top:10px}
+	main #works-list .grid a h3{margin-top:5px}
+	main #works-list .grid a .date{display:block;margin-top:3px;font-size:12px}
+	main #works-list .grid a:after{display:none}
+	
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap h3{margin-top:10px}
+	main #slider .swiper-container .swiper-wrapper .swiper-slide .slide-tit .slide-tit-wrap p{display:none}
+}
