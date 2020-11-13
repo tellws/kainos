@@ -96,7 +96,8 @@ header .overlay{position:fixed;top:0;right:0;width:100vw;height:100vh;background
 body.open header .overlay{transform:translateX(0);opacity:.7;transition:transform 0s, opacity .3s ease-out}
 
 /*header slim*/
-header.slim{background-color:rgba(25,25,25,.4);transition:background-color .3s ease-in-out}
+header.slim{background-color:rgba(25,25,25,1);transition:background-color .3s ease-in-out}
+/* header.slim{background-color:rgba(25,25,25,.4);transition:background-color .3s ease-in-out} */
 header.slim .header-inner{padding:20px 0;transition:padding .3s ease-in-out}
 header.slim .header-inner h1 a{transition:color .3s ease-in-out}
 header.slim nav .gnb li a{}
